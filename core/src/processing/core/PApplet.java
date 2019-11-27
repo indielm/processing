@@ -2260,7 +2260,7 @@ public class PApplet implements PConstants {
 
     try {
       Class<?> rendererClass =
-        PApplet.class.getClassLoader()
+        PApplet.class.getClassLoader();
 
       Constructor<?> constructor = rendererClass.getConstructor(new Class[] { });
       PGraphics pg = (PGraphics) constructor.newInstance();
